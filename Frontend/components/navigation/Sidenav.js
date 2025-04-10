@@ -41,7 +41,7 @@ function Sidenav() {
   
   return (
     <div className="fixed flex flex-col justify-between z-10 ">
-      <h1 className="text-3xl ml-5 font-mono   my-8">Tweetverse</h1>
+      <h1 className="text-3xl ml-5 font-mono   my-8">QuikPost</h1>
       <div className="flex flex-col gap-5">
         <Link href='/home'>
           <button className="flex items-center  bg-transparent rounded-lg px-4 py-2 hover:bg-gray-100">
