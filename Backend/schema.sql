@@ -1,8 +1,8 @@
 -- Create the database if it doesn't exist
-CREATE DATABASE IF NOT EXISTS TweetVerse;
+CREATE DATABASE IF NOT EXISTS QuikPost;
 
 -- Switch to the specified database
-USE TweetVerse;
+USE QuikPost;
 
 -- Create the Users table 
 CREATE TABLE IF NOT EXISTS Users (

@@ -11,7 +11,7 @@ export const loginUser  = async (req, res) => {
         if (userData[0].length !== 0) {
             const user = userData[0][0];
             
-            if (user.password_hash === password) {
+            if (user.password === password) {
                 res.status(201).json({ user: user,message: 'Login successful!' });
             } else {
                
@@ -33,7 +33,7 @@ export const signupUser  = async (req, res) => {
         
         const { displayname, username, email, dob, bio, password} = req.body;
       
-        const insertUserQuery = `INSERT INTO Users (displayname, username, email, dob, bio, password_hash)
+        const insertUserQuery = `INSERT INTO Users (displayname, username, email, dob, bio, password)
         VALUES (?, ?, ?, ?, ?, ?)`;
 
         const result = await db.query(insertUserQuery, [displayname, username, email, dob, bio, password]);
